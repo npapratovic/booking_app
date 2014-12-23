@@ -31,6 +31,13 @@ class Guests extends Controller {
 		if(isset($_POST['submit'])){
 			$firstName = $_POST['firstName'];
 			$lastName = $_POST['lastName'];
+			$adress = $_POST['adress'];
+			$zip_code = $_POST['zip_code'];
+			$city = $_POST['city'];
+			$country = $_POST['country'];
+			$date = $_POST['date'];
+			$contact_number = $_POST['contact_number'];
+			$email = $_POST['email'];
 
 			if(empty($firstName)){
 				$error[] = 'Please enter the first name';
@@ -44,7 +51,14 @@ class Guests extends Controller {
 
 				$postdata = array(
 					'firstName' => $firstName,
-					'lastName' => $lastName
+					'lastName' => $lastName,
+					'adress' => $adress,
+					'zip_code' => $zip_code,
+					'city' => $city,
+					'country' => $country,
+					'date' => $date,
+					'contact_number' => $contact_number,
+					'email' => $email
 			 	);
 
 				$this->_guests->insert($postdata);
@@ -66,7 +80,14 @@ class Guests extends Controller {
 		if(isset($_POST['submit'])){
 			$firstName = $_POST['firstName'];
 			$lastName = $_POST['lastName'];
-
+			$adress = $_POST['adress'];
+			$zip_code = $_POST['zip_code'];
+			$city = $_POST['city'];
+			$country = $_POST['country'];
+			$date = $_POST['date'];
+			$contact_number = $_POST['contact_number'];
+			$email = $_POST['email'];
+			
 			if(empty($firstName)){
 				$error[] = 'Please enter the first name';
 			}
@@ -79,7 +100,14 @@ class Guests extends Controller {
 
 				$postdata = array(
 					'firstName' => $firstName,
-					'lastName' => $lastName
+					'lastName' => $lastName,
+					'adress' => $adress,
+					'zip_code' => $zip_code,
+					'city' => $city,
+					'country' => $country,
+					'date' => $date,
+					'contact_number' => $contact_number,
+					'email' => $email
 			 	);
 				$where = array('id' => $id);
 				$this->_guests->update($postdata, $where);

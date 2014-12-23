@@ -28,7 +28,7 @@
 
                              <form class="form-horizontal form-border" action='' method='post'>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Ime: </label>
+                                    <label class="col-sm-3 control-label">Imeeee: </label>
                                       <div class="col-sm-6">
                                         <input type="text" class="form-control" name="firstName" placeholder="Ime...">
                                       </div>

@@ -22,42 +22,42 @@
    		<div class="row">
 
    			<div class="row">
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-1.jpg" />
    						<h4>Apartmani Petra</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-2.jpg" />
    						<h4>Apartmani Maja</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-1.jpg" />
    						<h4>Apartmani Josipa</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-2.jpg" />
    						<h4>Apartmani Antea</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-1.jpg" />
    						<h4>Apartmani Matea</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-2.jpg" />
    						<h4>Apartmani Gabrijela</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-1.jpg" />
    						<h4>Museum Citycenter Apartment 110 m2</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>
    				</div>
-   				<div class="col-md-6 col-xs-6 apartment-single">
+   				<div class="col-md-5 col-xs-5 apartment-single">
    						<img src="<?php echo url::get_template_path();?>img/apartman-2.jpg" />
    						<h4>Museum Citycenter Apartment 110 m2</h4>
    						<h5>Entire home/apt · 4 reviews · Oud-Zuid, Amsterdam</h5>

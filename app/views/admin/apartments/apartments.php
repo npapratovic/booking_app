@@ -14,14 +14,14 @@
                         <div class="col-md-10">
                         </div> 
                         <div class="col-md-2">
-                        <a href='/admin/guests/addguest' class="btn btn-default btn-block"> <i class="fa fa-pencil-square-o"></i>     Dodaj gosta</a>
+                        <a href='/admin/apartments/add' class="btn btn-default btn-block"> <i class="fa fa-pencil-square-o"></i>     Dodaj apartman</a>
                                      
                                     <br /><br />
                              
                         </div>
                       </div>
                     <div class="panel-heading">
-                           Pregled gostiju
+                           Pregled apartmana
                         </div>
 
                         <div class="panel-body">
@@ -30,24 +30,20 @@
                    <table class="table table-striped table-bordered table-hover">
                       <tr>
                         <th>Ime</th>
-                        <th>Prezime</th>
-                        <th>Grad</th> 
-                        <th>Država</th>  
-                        <th>Datum evidencije</th>   
+                        <th>Geografska širina</th>
+                        <th>Geografska dužina</th> 
                         <th>Akcija</th> 
 
                       </tr>
 
-                      <?php if($data['guests']){
-                        foreach ($data['guests'] as $row) {
+                      <?php if($data['apartments']){
+                        foreach ($data['apartments'] as $row) {
                           echo "<tr>";
-                          echo "<td>$row->firstName</td>";
-                          echo "<td>$row->lastName</td>";
-                          echo "<td>$row->city</td>";  
-                          echo "<td>$row->country</td>"; 
-                          echo "<td>$row->date</td>";  
-                          echo "<td><a href='".DIR."admin/guests/editguest/$row->id' class='btn btn-default'>Uredi</a> 
-                          <a href='".DIR."admin/guests/delete/$row->id' class='btn btn-default'>Obriši</a>   <a href='".DIR."admin/guests/view/$row->id' class='btn btn-default'>Pogledaj</a> </td>";
+                          echo "<td>$row->name</td>";
+                          echo "<td>$row->lon</td>";
+                          echo "<td>$row->lat</td>"; 
+                          echo "<td><a href='".DIR."admin/apartments/edit/$row->id' class='btn btn-default'>Uredi</a> 
+                          <a href='".DIR."admin/apartments/delete/$row->id' class='btn btn-default'>Obriši</a>   <a href='".DIR."admin/apartments/view/$row->id' class='btn btn-default'>Pregledaj</a> </td>";
                           echo "</tr>";
                         }
 

@@ -17,7 +17,19 @@ Router::get('admin/guests/addguest', 'guests@addGuest');
 Router::post('admin/guests/addguest', 'guests@addGuest'); 
 Router::get('admin/guests/editguest/(:num)', 'guests@editGuest');
 Router::post('admin/guests/editguest/(:num)', 'guests@editGuest');
+Router::get('admin/guests/view/(:num)', 'guests@view');
+Router::post('admin/guests/view/(:num)', 'guests@view');
 Router::get('admin/guests/deleteguest/(:num)', 'guests@deleteGuest');
+
+//Apartments
+Router::get('admin/apartments', 'apartments@apartments');
+Router::get('admin/apartments/add', 'apartments@add');
+Router::post('admin/apartments/add', 'apartments@add'); 
+Router::get('admin/apartments/edit/(:num)', 'apartments@edit');
+Router::post('admin/apartments/edit/(:num)', 'apartments@edit');
+Router::get('admin/apartments/view/(:num)', 'apartments@view');
+Router::post('admin/apartments/view/(:num)', 'apartments@view');
+Router::get('admin/apartments/delete/(:num)', 'apartments@delete');
 
 //if no route found
 Router::error('error@index');

@@ -20,7 +20,9 @@
                     <ul class="dropdown-menu" role="menu">
                       <li class="dropdown-header">Račun</li>
                       <li><a href="#">Uredi račun</a></li>
-                      <li><a href="/admin/logout">Odjava</a></li>
+                      <li><a href="/admin/logout">Odjava</a></li>                      
+                      <li><a href="<?php echo DIR; ?>" target="_blank">Posjeti web</a></li>
+
                       </ul>
                     </li>
                   </ul>

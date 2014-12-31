@@ -83,7 +83,7 @@
                                         <input type="text" class="form-control" name="email" placeholder="Email adresa..." value='<?php echo $data['row'][0]->email;?>'>
                                       </div>
                                 </div> 
-                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" name="submit" class="btn btn-default">Submit</button>
                                  
                              </form>
                           </div>

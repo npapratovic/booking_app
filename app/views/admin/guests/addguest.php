@@ -81,7 +81,7 @@
                                         <input type="text" class="form-control" name="email" placeholder="Email adresa...">
                                       </div>
                                 </div> 
-                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" name="submit" class="btn btn-default">Sačuvaj</button>
                                  
                              </form>
                           </div>

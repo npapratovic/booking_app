@@ -6,8 +6,8 @@
             <li><a href="/admin/guests/addguest"><i class="fa fa-pencil-square-o"></i>  UNOS GOSTA</a> </li> 
             <li><a href="/admin/guests"><i class="fa fa-eye"></i>  PREGLED GOSTIJU</a> </li>
             <li class="disabled"><a href="#"><i class="fa fa-home"></i>  APARTMANI</a> </li>
-            <li><a href="#"><i class="fa fa-pencil-square-o"></i>  UNOS APARTMANA</a> </li>
-            <li><a href="#"><i class="fa fa-eye"></i>  PREGLED APARTMANA</a> </li>
+            <li><a href="/admin/apartments/add"><i class="fa fa-pencil-square-o"></i>  UNOS APARTMANA</a> </li>
+            <li><a href="/admin/apartments"><i class="fa fa-eye"></i>  PREGLED APARTMANA</a> </li>
             <li class="disabled"><a href="#"><i class="fa fa-ticket"></i>  REZERVACIJE</a> </li>
             <li><a href="#"><i class="fa fa-pencil-square-o"></i>  UNOS REZERVACIJE</a> </li>
             <li><a href="#"><i class="fa fa-eye"></i>  PREGLED REZERVACIJE</a> </li>

@@ -122,6 +122,18 @@ class Guests extends Controller {
 		$this->view->rendertemplate('footer',$data);
 
 	}	
+
+	public function view($id) {
+		$data['title'] = 'Pregledaj gosta'; 
+ 
+		$data['row'] = $this->_guests->get_guest($id);
+
+		$this->view->rendertemplate('header',$data);
+		$this->view->render('admin/guests/view',$data,$error);
+		$this->view->rendertemplate('footer',$data);
+
+	}	
+
 	public function deleteGuest($id) {
 		$this->_guests->delete($id);
 		Url::redirect('admin/guests');

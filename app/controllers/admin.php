@@ -1,9 +1,15 @@
 <?php
 
 class Admin extends Controller {
+	private $_reservations;
+	private $_guests;
+	private $_apartments;
 
 	public function __construct(){
 		parent::__construct();
+		$this->_reservations = $this->loadModel('reservations_model');
+		$this->_guests = $this->loadModel('guests_model');
+		$this->_apartments = $this->loadModel('apartments_model'); 
 	}	
 
 	public function admin(){
@@ -13,6 +19,11 @@ class Admin extends Controller {
 		}
 
 		$data['title'] = 'Admin';
+
+		$data['reservations'] = $this->_reservations->get_reservations();
+		$data['reservation_count'] = $this->_reservations->count_reservations();
+		$data['guest_count'] = $this->_guests->count_guests();
+		$data['apartment_count'] = $this->_apartments->count_apartments();
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/admin',$data);

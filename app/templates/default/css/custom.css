@@ -438,3 +438,26 @@ h5.user-username {
 	width: 100%;
 	height: auto;
 }
+
+.payed {
+	background-color: #5cb85c !important;
+	color: #ffffff !important;
+	text-align: center;
+}
+
+.not_payed {
+	background-color: #f0ad4e !important;
+	color: #ffffff !important;
+	text-align: center;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	vertical-align: middle; 
+}
+
+.reservation-per-apartment {
+	background-color: #1ABC9C;
+	text-align: center;
+	border-radius: 5px;
+	color: #ffffff;
+	margin-top: 10px;
+}

@@ -7,11 +7,13 @@
 	}	
 
 	public function get_apartments () {
-		return $this->_db->select("SELECT * FROM ".PREFIX."apartments ORDER BY id");
+		return $this->_db->select("SELECT * FROM ".PREFIX."apartments ORDER BY apartment_id");
 	}
-
-	public function get_apartment($id) {
-		return $this->_db->select("SELECT * FROM ".PREFIX."apartments WHERE id =:id",array(':id' => $id));
+ 	public function count_apartments () {
+ 		return $this->_db->select("SELECT COUNT(*) AS apartment_count FROM ".PREFIX."apartments");
+ 	}
+	public function get_apartment($apartment_id) {
+		return $this->_db->select("SELECT * FROM ".PREFIX."apartments WHERE apartment_id =:apartment_id",array(':apartment_id' => $apartment_id));
 	} 
 	public function insert($data) {
 		$this->_db->insert(PREFIX."apartments",$data);
@@ -21,7 +23,7 @@
 		$this->_db->update(PREFIX."apartments",$data,$where);
 	}
 
-	public function delete($id) {
-		$this->_db->delete(PREFIX."apartments", array('id' => $id));
+	public function delete($apartment_id) {
+		$this->_db->delete(PREFIX."apartments", array('apartment_id' => $apartment_id));
 	}
 }

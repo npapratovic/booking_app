@@ -10,7 +10,7 @@
           	  
 				        <div class="row"> 
 				           <div class="col-md-12">
-                      <div class="panel panel-default">
+                      <div class="panel panel-default  animated fadeInUpBig">
                          <div class="panel-heading">
                                       <h3 class="panel-title">Unos apartmana</h3> 
                           </div>

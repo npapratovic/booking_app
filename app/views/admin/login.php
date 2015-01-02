@@ -29,6 +29,11 @@
                                     <hr>
                                  </div>
                             </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                   <a class="btn btn-primary btn-block" href="<?php echo DIR; ?>"><?php echo SITETITLE; ?></a>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

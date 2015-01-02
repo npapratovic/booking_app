@@ -14,26 +14,32 @@
                    <div class="col-md-12">
 
                       <div class="row"> 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                         </div> 
-                         <div class="col-md-2">
+                         <div class="col-md-2 animated lightSpeedIn">
                           <a href='/admin/guests' class="btn btn-default btn-block"> <i class="fa fa-eye"></i>     Svi gosti</a>
                                      
                                     <br /><br />
                         </div>
-                        <div class="col-md-2">
-                        <a href='/admin/guests/editguest/<?php echo $data['row'][0]->id;?>' class="btn btn-default btn-block"> <i class="fa fa-pencil-square-o"></i>     Uredi</a>
+                        <div class="col-md-2 animated lightSpeedIn">
+                        <a href='/admin/guests/delete/<?php echo $data['row'][0]->guest_id;?>' class="btn btn-default btn-block"> <i class="fa fa-pencil-square-o"></i>     Obriši</a>
                                      
                                     <br /><br />
                              
                         </div>
-                       <div class="col-md-2">
+                        <div class="col-md-2 animated lightSpeedIn">
+                        <a href='/admin/guests/editguest/<?php echo $data['row'][0]->guest_id;?>' class="btn btn-default btn-block"> <i class="fa fa-pencil-square-o"></i>     Uredi</a>
+                                     
+                                    <br /><br />
+                             
+                        </div>
+                       <div class="col-md-2 animated lightSpeedIn">
                           <a href='/admin/guests/addguest' class="btn btn-default btn-block"> <i class="fa fa-pencil"></i>     Novi gost</a>
                                      
                                     <br /><br />
                         </div>
                       </div>
-                      <div class="panel panel-info">
+                      <div class="panel panel-info animated fadeInUpBig">
                          <div class="panel-heading">
                                      
                                   <h3 class="panel-title">Pregled gosta: <?php echo $data['row'][0]->firstName;?> <?php echo $data['row'][0]->lastName;?>  </h3> 
@@ -54,7 +60,7 @@
                                               </div>
 
                                               <div class="col-sm-9">
-                                                 <h6><?php echo $data['row'][0]->id;?>  </h6>
+                                                 <h6><?php echo $data['row'][0]->guest_id;?>  </h6>
                                               </div>
                                             </div>
 

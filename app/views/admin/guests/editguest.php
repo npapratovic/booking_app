@@ -11,7 +11,7 @@
 
 
                 <div class="row"> 
-                   <div class="col-md-12">
+                   <div class="col-md-12 animated fadeInUpBig">
                       <div class="panel panel-default">
                          <div class="panel-heading">
                                       <h3 class="panel-title">Uređivanje gosta</h3> 
@@ -83,7 +83,7 @@
                                         <input type="text" class="form-control" name="email" placeholder="Email adresa..." value='<?php echo $data['row'][0]->email;?>'>
                                       </div>
                                 </div> 
-                                <button type="submit" name="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" name="submit" class="btn btn-default">Sačuvaj</button>
                                  
                              </form>
                           </div>

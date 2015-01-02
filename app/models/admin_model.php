@@ -10,4 +10,5 @@ class Admin_model extends Model {
 		$data = $this->_db->select("SELECT password FROM ".PREFIX."users WHERE username = :username", array(':username' => $username));
 		return $data[0]->password;
 	}
+ 
 }

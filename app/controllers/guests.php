@@ -39,14 +39,14 @@ class Guests extends Controller {
 			$contact_number = $_POST['contact_number'];
 			$email = $_POST['email'];
 
+			
 			if(empty($firstName)){
-				$error[] = 'Please enter the first name';
+				$error[] = 'Unesite ime gosta';
 			}
 
 			if(empty($lastName)){
-				$error[] = 'Please enter the last name';
+				$error[] = 'Unesite prezime gosta';
 			}
-
 			if(!isset($error)) {
 
 				$postdata = array(
@@ -73,7 +73,7 @@ class Guests extends Controller {
 	}	
 
  
-	public function editGuest($id) {
+	public function editGuest($guest_id) {
 		$data['title'] = 'Uredi gosta'; 
 
 
@@ -89,11 +89,11 @@ class Guests extends Controller {
 			$email = $_POST['email'];
 			
 			if(empty($firstName)){
-				$error[] = 'Please enter the first name';
+				$error[] = 'Unesite ime gosta';
 			}
 
 			if(empty($lastName)){
-				$error[] = 'Please enter the last name';
+				$error[] = 'Unesite prezime gosta';
 			}
 
 			if(!isset($error)) {
@@ -109,13 +109,13 @@ class Guests extends Controller {
 					'contact_number' => $contact_number,
 					'email' => $email
 			 	);
-				$where = array('id' => $id);
+				$where = array('guest_id' => $guest_id);
 				$this->_guests->update($postdata, $where);
 				Url::redirect('admin/guests');
 			}
 		}
 
-		$data['row'] = $this->_guests->get_guest($id);
+		$data['row'] = $this->_guests->get_guest($guest_id);
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/guests/editguest',$data,$error);
@@ -123,10 +123,10 @@ class Guests extends Controller {
 
 	}	
 
-	public function view($id) {
+	public function view($guest_id) {
 		$data['title'] = 'Pregledaj gosta'; 
  
-		$data['row'] = $this->_guests->get_guest($id);
+		$data['row'] = $this->_guests->get_guest($guest_id);
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/guests/view',$data,$error);
@@ -134,8 +134,8 @@ class Guests extends Controller {
 
 	}	
 
-	public function deleteGuest($id) {
-		$this->_guests->delete($id);
+	public function deleteGuest($guest_id) {
+		$this->_guests->delete($guest_id);
 		Url::redirect('admin/guests');
 	}	
 }

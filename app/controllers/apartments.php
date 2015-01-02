@@ -100,7 +100,7 @@ class Apartments extends Controller {
 	}	
 
  
-	public function edit($id) {
+	public function edit($apartment_id) {
 		$data['title'] = 'Uredi apartman'; 
 
 
@@ -162,13 +162,13 @@ class Apartments extends Controller {
 					'terasa' => $terasa,
 					'pogled_more' => $pogled_more
 			 	);
-				$where = array('id' => $id);
+				$where = array('apartment_id' => $apartment_id);
 				$this->_apartments->update($postdata, $where);
 				Url::redirect('admin/apartments');
 			}
 		}
 
-		$data['row'] = $this->_apartments->get_apartment($id);
+		$data['row'] = $this->_apartments->get_apartment($apartment_id);
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/apartments/edit',$data,$error);
@@ -176,10 +176,10 @@ class Apartments extends Controller {
 
 	}	
 
-	public function view($id) {
+	public function view($apartment_id) {
 		$data['title'] = 'Pregledaj apartman'; 
  
-		$data['row'] = $this->_apartments->get_apartment($id);
+		$data['row'] = $this->_apartments->get_apartment($apartment_id);
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/apartments/view',$data,$error);
@@ -187,8 +187,8 @@ class Apartments extends Controller {
 
 	}	
 
-	public function delete($id) {
-		$this->_apartments->delete($id);
+	public function delete($apartment_id) {
+		$this->_apartments->delete($apartment_id);
 		Url::redirect('admin/apartments');
 	}	
 }

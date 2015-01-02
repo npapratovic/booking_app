@@ -19,7 +19,7 @@ Router::get('admin/guests/editguest/(:num)', 'guests@editGuest');
 Router::post('admin/guests/editguest/(:num)', 'guests@editGuest');
 Router::get('admin/guests/view/(:num)', 'guests@view');
 Router::post('admin/guests/view/(:num)', 'guests@view');
-Router::get('admin/guests/deleteguest/(:num)', 'guests@deleteGuest');
+Router::get('admin/guests/delete/(:num)', 'guests@deleteGuest');
 
 //Apartments
 Router::get('admin/apartments', 'apartments@apartments');
@@ -30,6 +30,19 @@ Router::post('admin/apartments/edit/(:num)', 'apartments@edit');
 Router::get('admin/apartments/view/(:num)', 'apartments@view');
 Router::post('admin/apartments/view/(:num)', 'apartments@view');
 Router::get('admin/apartments/delete/(:num)', 'apartments@delete');
+
+
+//Reservations
+Router::get('admin/reservations', 'reservations@reservations');
+Router::get('admin/reservations/add', 'reservations@add');
+Router::post('admin/reservations/add', 'reservations@add'); 
+Router::get('admin/reservations/edit/(:num)', 'reservations@edit');
+Router::post('admin/reservations/edit/(:num)', 'reservations@edit');
+Router::get('admin/reservations/view/(:num)', 'reservations@view');
+Router::post('admin/reservations/view/(:num)', 'reservations@view');
+Router::get('admin/reservations/delete/(:num)', 'reservations@delete');
+Router::get('admin/reservations/apartment/(:num)', 'reservations@perApartment');
+Router::post('admin/reservations/apartment/(:num)', 'reservations@perApartment'); 
 
 //if no route found
 Router::error('error@index');

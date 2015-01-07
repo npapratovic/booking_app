@@ -1,4 +1,13 @@
-<div class="col-sm-3 col-md-2  sidebar">
+            
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="toggle-menu">
+                    <a href="#menu-toggle" class="btn btn-default btn-block" id="menu-toggle">Proširi menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-2  sidebar">
+
             <ul class="nav nav-sidebar">
             <li><a href="/admin"><i class="fa fa-home"></i>  POČETNA</a></li>
             <li><a href="#"><i class="fa fa-cogs"></i>  POSTAVKE</a> </li>

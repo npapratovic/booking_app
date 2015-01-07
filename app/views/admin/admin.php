@@ -10,69 +10,75 @@
 	          	  
 			 <div class="row">
                 <div class="col-lg-4 col-md-6 animated fadeInUpBig">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php if($data['apartment_count']){
-                                    foreach ($data['apartment_count'] as $row) {  
-                                      echo "$row->apartment_count"; 
+                    <div class="shadowed">
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <i class="fa fa-comments fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                      <div class="huge"><?php if($data['apartment_count']){
+                                      foreach ($data['apartment_count'] as $row) {  
+                                        echo "$row->apartment_count"; 
+                                      }
+
                                     }
 
-                                  }
-
-                                  ?></div>
-                                    <div>evidentiranih apartmana</div>
-                                </div>
-                            </div>
-                        </div> 
+                                    ?></div>
+                                      <div>evidentiranih apartmana</div>
+                                  </div>
+                              </div>
+                          </div> 
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animated fadeInUpBig">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-users fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php if($data['guest_count']){
-                                    foreach ($data['guest_count'] as $row) {  
-                                      echo "$row->guest_count"; 
+                  <div class="shadowed">
+                      <div class="panel panel-green">
+                          <div class="panel-heading">
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <i class="fa fa-users fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                      <div class="huge"><?php if($data['guest_count']){
+                                      foreach ($data['guest_count'] as $row) {  
+                                        echo "$row->guest_count"; 
+                                      }
+
                                     }
 
-                                  }
-
-                                  ?></div>
-                                    <div>evidentiranih gostiju</div>
-                                </div>
-                            </div>
-                        </div> 
+                                    ?></div>
+                                      <div>evidentiranih gostiju</div>
+                                  </div>
+                              </div>
+                          </div> 
+                      </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 animated fadeInUpBig">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php if($data['reservation_count']){
-                                    foreach ($data['reservation_count'] as $row) {  
-                                      echo "$row->reservation_count"; 
+                  <div class="shadowed">
+                      <div class="panel panel-yellow">
+                          <div class="panel-heading">
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                      <i class="fa fa-tasks fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                      <div class="huge"><?php if($data['reservation_count']){
+                                      foreach ($data['reservation_count'] as $row) {  
+                                        echo "$row->reservation_count"; 
+                                      }
+
                                     }
 
-                                  }
-
-                                  ?></div>
-                                    <div>evidentiranih rezervacija</div>
-                                </div>
-                            </div>
-                        </div> 
+                                    ?></div>
+                                      <div>evidentiranih rezervacija</div>
+                                  </div>
+                              </div>
+                          </div> 
+                      </div>
                     </div>
                 </div> 
             </div>
@@ -100,19 +106,19 @@
                                   <?php if($data['reservations']){
                                     foreach ($data['reservations'] as $row) { 
                                       echo "<tr style='vertical-align:center'>";
-                                      echo "<td class='col-md-2'>$row->reservation_id</td>";
-                                      echo "<td class='col-md-2'>$row->firstName $row->lastName</td>";
-                                      echo "<td class='col-md-1'>$row->name</td>";
-                                      echo "<td class='col-md-1'>$row->check_in</td>";
-                                      echo "<td class='col-md-1'>$row->check_out</td>";
-                                      echo "<td class='col-md-2'>$row->booking_date</td>";
+                                      echo "<td>$row->reservation_id</td>";
+                                      echo "<td>$row->firstName $row->lastName</td>";
+                                      echo "<td>$row->name</td>";
+                                      echo "<td>$row->check_in</td>";
+                                      echo "<td>$row->check_out</td>";
+                                      echo "<td>$row->booking_date</td>";
                                       if ($row->payed == 'DA') {
                                         echo "<td class='payed'>$row->payed</td>"; 
                                       }
                                       else  {
                                         echo "<td class='not_payed'>$row->payed</td>"; 
                                       }
-                                      echo "<td class='col-md-3'><a href='".DIR."admin/reservations/edit/$row->reservation_id' class='btn btn-default'><i class='fa fa-edit'></i>  Uredi</a> 
+                                      echo "<td class='col-md-4'><a href='".DIR."admin/reservations/edit/$row->reservation_id' class='btn btn-default'><i class='fa fa-edit'></i>  Uredi</a> 
                                       <a href='".DIR."admin/reservations/delete/$row->reservation_id' class='btn btn-default'><i class='fa fa-trash'></i>  Obriši</a>   <a href='".DIR."admin/reservations/view/$row->reservation_id' class='btn btn-default'><i class='fa fa-eye'></i>  Pregledaj</a> </td>";
                                       echo "</tr>";
                                     }

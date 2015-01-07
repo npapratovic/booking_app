@@ -31,10 +31,9 @@ class Apartments extends Controller {
 		if(isset($_POST['submit'])){
 
  			$name = $_POST['name'];
-			$lon = $_POST['lon'];
+ 			$lon = $_POST['lon'];
 			$lat = $_POST['lat'];
-			$img = $_POST['img'];
- 			$broj_lezaja = $_POST['broj_lezaja'];
+  			$broj_lezaja = $_POST['broj_lezaja'];
 			$broj_zvijezdica = $_POST['broj_zvijezdica'];
 			$cijena_predsezona = $_POST['cijena_predsezona'];
 			$cijena_sezona = $_POST['cijena_sezona'];
@@ -60,19 +59,15 @@ class Apartments extends Controller {
 			if(empty($lat)){
 				$error[] = 'Unesite geografsku dužinu';
 			}
-
-			if(empty($img)){
-				$error[] = 'Unesite link do slike';
-			}
+ 
 
 			if(!isset($error)) {
 
 				$postdata = array(
 					'name' => $name,
-					'lon' => $lon,
+ 					'lon' => $lon,
 					'lat' => $lat, 
-					'img' => $img,
-					'broj_lezaja' => $broj_lezaja,
+ 					'broj_lezaja' => $broj_lezaja,
 					'broj_zvijezdica' => $broj_zvijezdica,
 					'cijena_predsezona' => $cijena_predsezona, 
 					'cijena_sezona' => $cijena_sezona,
@@ -87,6 +82,34 @@ class Apartments extends Controller {
 					'terasa' => $terasa,
 					'pogled_more' => $pogled_more
 			 	);
+
+				foreach ($_FILES["img"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img"]["tmp_name"][$key];
+				        $name = $_FILES["img"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img'] =  'uploads/' . $name;
+				    }
+				}
+
+				foreach ($_FILES["img_1"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img_1"]["tmp_name"][$key];
+				        $name = $_FILES["img_1"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img_1'] =  'uploads/' . $name;
+				    }
+				}
+
+				foreach ($_FILES["img_2"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img_2"]["tmp_name"][$key];
+				        $name = $_FILES["img_2"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img_2'] =  'uploads/' . $name;
+				    }
+				}
+ 
 
 				$this->_apartments->insert($postdata);
 				Url::redirect('admin/apartments');
@@ -108,8 +131,7 @@ class Apartments extends Controller {
  			$name = $_POST['name'];
 			$lon = $_POST['lon'];
 			$lat = $_POST['lat'];
-			$img = $_POST['img'];
- 			$broj_lezaja = $_POST['broj_lezaja'];
+  			$broj_lezaja = $_POST['broj_lezaja'];
 			$broj_zvijezdica = $_POST['broj_zvijezdica'];
 			$cijena_predsezona = $_POST['cijena_predsezona'];
 			$cijena_sezona = $_POST['cijena_sezona'];
@@ -135,10 +157,7 @@ class Apartments extends Controller {
 			if(empty($lat)){
 				$error[] = 'Unesite geografsku dužinu';
 			}
-
-			if(empty($img)){
-				$error[] = 'Unesite link do slike';
-			}
+ 
 
 			if(!isset($error)) {
 
@@ -146,8 +165,7 @@ class Apartments extends Controller {
 					'name' => $name,
 					'lon' => $lon,
 					'lat' => $lat, 
-					'img' => $img,
-					'broj_lezaja' => $broj_lezaja,
+ 					'broj_lezaja' => $broj_lezaja,
 					'broj_zvijezdica' => $broj_zvijezdica,
 					'cijena_predsezona' => $cijena_predsezona, 
 					'cijena_sezona' => $cijena_sezona,
@@ -162,6 +180,34 @@ class Apartments extends Controller {
 					'terasa' => $terasa,
 					'pogled_more' => $pogled_more
 			 	);
+
+				foreach ($_FILES["img"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img"]["tmp_name"][$key];
+				        $name = $_FILES["img"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img'] =  'uploads/' . $name;
+				    }
+				}
+
+				foreach ($_FILES["img_1"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img_1"]["tmp_name"][$key];
+				        $name = $_FILES["img_1"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img_1'] =  'uploads/' . $name;
+				    }
+				}
+
+				foreach ($_FILES["img_2"]["error"] as $key => $error) {
+				    if ($error == UPLOAD_ERR_OK) {
+				        $tmp_name = $_FILES["img_2"]["tmp_name"][$key];
+				        $name = $_FILES["img_2"]["name"][$key]; 
+ 				        move_uploaded_file($tmp_name, "uploads/$name"); 
+				        $postdata['img_2'] =  'uploads/' . $name;
+				    }
+				}
+
 				$where = array('apartment_id' => $apartment_id);
 				$this->_apartments->update($postdata, $where);
 				Url::redirect('admin/apartments');

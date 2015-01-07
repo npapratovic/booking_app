@@ -242,22 +242,32 @@
                                         </div>
 
                                         <div class="col-md-6">
-                                              <div class="row">
-                                                  <div class="col-md-12">
-                                                    <div class="apartment-img">
-                                                    <img src='<?php echo $data['row'][0]->img;?>' />
-                                                    </div>
-                                                  </div>
-                                              </div>
+                                          <div class="row">
+                                          <div class="col-md-12"><p>Slike koje su dodane uz vaš apartman: </p></div>
+                                            <div class="col-md-4 apartman_img">
+                                                <img src='<?php echo DIR . $data['row'][0]->img;?>' />
+
+                                                <br />
+                                             </div>
+                                            <div class="col-md-4 apartman_img">
+                                                <img src='<?php echo DIR . $data['row'][0]->img_1;?>' />
+
+                                                <br />
+                                             </div>
+                                            <div class="col-md-4 apartman_img">
+                                                <img src='<?php echo DIR . $data['row'][0]->img_2;?>' />
+                                                <br />
+                                             </div>
+                                          </div>
 
                                               <div class="row">
-                                                  <div class="col-md-12">
+                                                  <div class="col-md-12"><p><br /> Prikaz vašeg apartmana na karti: </p>
                                                           <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
                                                               <script>
                                                                 function initialize() {
                                                                   var myLatlng = new google.maps.LatLng(<?php echo $data['row'][0]->lon;?>,<?php echo $data['row'][0]->lat;?>);
                                                                   var mapOptions = {
-                                                                    zoom: 12,
+                                                                    zoom: 16,
                                                                     center: myLatlng
                                                                   }
                                                                   var map = new google.maps.Map(document.getElementById('map-canvas-apartment'), mapOptions);
@@ -274,8 +284,7 @@
                                                               </script>
 
                                                               <br />
-                                                    <div class="divider"></div>
-                                                              <br />
+                                                               <br />
 
                                                     <div id="map-canvas-apartment"></div>
                                                   </div>

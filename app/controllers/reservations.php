@@ -3,11 +3,14 @@
 class Reservations extends Controller {
 
 	private $_reservations;
+	private $_guests;
 
     public function __construct(){
 		parent::__construct();
 
 		$this->_reservations = $this->loadModel('reservations_model');
+		$this->_guests = $this->loadModel('guests_model');
+		$this->_apartments = $this->loadModel('apartments_model');
 
 		if(Session::get('loggin') == false){
 			url::redirect('admin/login');
@@ -38,23 +41,33 @@ class Reservations extends Controller {
  			$payed = $_POST['payed'];
 
 			if(empty($id_guest)){
-				$error[] = 'Unesite šifru gosta';
+				$error[] = '<div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Greška: </strong>  Unesite šifru gosta.</div>';
 			}
 
 			if(empty($id_apartment)){
-				$error[] = 'Unesite apartmana';
+				$error[] = '<div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Greška: </strong>  Unesite apartman.</div>';
 			}
 
 			if(empty($check_in)){
-				$error[] = 'Unesite check in datum';
+				$error[] = '<div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Greška: </strong>  Unesite check in datum.</div>';
 			}
 
 			if(empty($check_out)){
-				$error[] = 'Unesite check out datum';
+				$error[] = '<div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Greška: </strong>  Unesite check out datum.</div>';
 			}
 
 			if(empty($payed)){
-				$error[] = 'Odaberite da li je plaćeno';
+				$error[] = '<div class="alert alert-dismissable alert-danger">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Greška: </strong>  Odaberite da li je plaćeno.</div>';
 			}
 
 			if(!isset($error)) {
@@ -72,6 +85,8 @@ class Reservations extends Controller {
 				Url::redirect('admin/reservations');
 			}
 		}
+		$data['guests'] = $this->_guests->get_guests();
+		$data['apartments'] = $this->_apartments->get_apartments();
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/reservations/add',$data,$error);
@@ -129,6 +144,8 @@ class Reservations extends Controller {
 		}
 
 		$data['row'] = $this->_reservations->get_reservation($reservation_id);
+		$data['guests'] = $this->_guests->get_guests();
+		$data['apartments'] = $this->_apartments->get_apartments();
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/reservations/edit',$data,$error);

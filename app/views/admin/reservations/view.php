@@ -38,6 +38,7 @@
                                     <br /><br />
                         </div>
                       </div>
+                      <div class="col-md-6">
                       <div class="panel panel-info animated fadeInUpBig">
                          <div class="panel-heading">
                                      
@@ -50,7 +51,7 @@
 
                                       <div class="row">
 
-                                           <div class="col-md-6">
+                                           <div class="col-md-12">
 
 
                                             <div class="row">
@@ -131,7 +132,7 @@
                              
                            </div>
                        </div>
-
+                       </div>
  
                    </div>
                 </div> 

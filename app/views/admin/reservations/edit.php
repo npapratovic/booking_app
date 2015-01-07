@@ -28,19 +28,36 @@
 
                            ?>
 
-                             <form class="form-horizontal form-border" action='' method='post'>
+                             <form class="form-horizontal form-border" action='' method='post'> 
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Šifra gosta: </label>
+                                    <label class="col-sm-3 control-label">Gost: </label>
                                       <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="id_guest" placeholder="Šifra gosta..." value='<?php echo $data['row'][0]->id_guest;?>'>
+                                        <select name="id_guest" class="form-control selectpicker show-tick" data-style="btn-info" data-live-search="true" data-size="10">
+                                          <?php if($data['guests']){
+                                            echo "<option>Odaberi gosta</option>"; 
+                                            foreach ($data['guests'] as $guest) {
+                                               echo "<option value='$guest->guest_id'>$guest->firstName $guest->lastName</option>";
+                                            }
+                                          }
+                                          ?>
+                                        </select>
                                       </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Šifra apartmana: </label>
+                               <div class="form-group">
+                                    <label class="col-sm-3 control-label">Apartman: </label>
                                       <div class="col-sm-6">
-                                        <input type="text" class="form-control" name="id_apartment" placeholder="Šifra apartmana" value='<?php echo $data['row'][0]->id_apartment;?>'>
+                                        <select name="id_apartment" class="form-control selectpicker show-tick" data-style="btn-info" data-live-search="true" data-size="10">
+                                          <?php if($data['apartments']){
+                                            echo "<option>Odaberi apartman</option>"; 
+                                            foreach ($data['apartments'] as $apartment) {
+                                               echo "<option value='$apartment->apartment_id'>$apartment->name</option>";
+                                            }
+                                          }
+                                          ?>
+                                        </select>
                                       </div>
                                 </div>
+                                
                                  <div class="form-group">
                                     <label class="col-sm-3 control-label">Check in: </label>
                                       <div class="col-sm-2">
@@ -54,7 +71,7 @@
                                <div class="form-group">
                                     <label class="col-sm-3 control-label">Plaćeno: </label>
                                       <div class="col-sm-5">
-                                        <select class="form-control" name="payed" value='<?php echo $data['row'][0]->payed;?>'>
+                                        <select class="form-control selectpicker show-tick" data-style="btn-info" name="payed" value='<?php echo $data['row'][0]->payed;?>'>
                                             <option>Odaberi...</option> 
                                             <option value="DA">DA</option>
                                             <option value="NE">NE</option> 

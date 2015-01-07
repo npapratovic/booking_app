@@ -2,7 +2,7 @@
 require('app/core/autoloader.php');
 
 //define routes
-Router::get('', 'welcome@index');
+Router::get('', 'welcome/welcome@index');
 Router::get('admin', 'admin@admin');
 Router::get('admin/login', 'admin@login');
 Router::post('admin/login', 'admin@login');

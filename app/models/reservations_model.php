@@ -22,6 +22,10 @@
 		return $this->_db->select("SELECT reservation_id, check_in, check_out, booking_date, payed, name, firstName, lastName FROM ".PREFIX."reservations INNER JOIN ".PREFIX."apartments ON ".PREFIX."apartments.apartment_id = ".PREFIX."reservations.id_apartment INNER JOIN ".PREFIX."guests ON ".PREFIX."guests.guest_id = ".PREFIX."reservations.id_guest WHERE id_apartment =:id_apartment",array(':id_apartment' => $id_apartment));
 	} 
 
+	public function get_json_per_apartment($id_apartment) {
+		return $this->_db->select("SELECT id_apartment, check_in AS start, check_out AS end FROM ".PREFIX."reservations WHERE id_apartment =:id_apartment",array(':id_apartment' => $id_apartment));
+	}
+
 	public function get_diff_apartments () {
 		return $this->_db->select("SELECT DISTINCT id_apartment, name FROM ".PREFIX."reservations INNER JOIN ".PREFIX."apartments ON ".PREFIX."apartments.apartment_id = ".PREFIX."reservations.id_apartment");
 	}

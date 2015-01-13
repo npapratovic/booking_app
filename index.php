@@ -43,6 +43,7 @@ Router::post('admin/reservations/view/(:num)', 'reservations@view');
 Router::get('admin/reservations/delete/(:num)', 'reservations@delete');
 Router::get('admin/reservations/apartment/(:num)', 'reservations@perApartment');
 Router::post('admin/reservations/apartment/(:num)', 'reservations@perApartment'); 
+Router::get('admin/reservations/feed/(:num)', 'reservations@feedPerApartment'); 
 
 //if no route found
 Router::error('error@index');

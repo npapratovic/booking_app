@@ -29,10 +29,37 @@
                           </div>
                         </div>
 
+                        <div class="row">
+                          <h4>LEGENDA: </h4>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div class="color-label" style="background: #ff9f89; height: 40px; border: 1px solid #ccc;"></div>
+                          </div>
+                          <div class="col-md-2">
+                            <h5>REZERVIRANO</h5>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="color-label" style="background: #FFFFFF; height: 40px; border: 1px solid #ccc;"></div>
+                          </div>
+                          <div class="col-md-2">
+                            <h5>SLOBODNO</h5>
+                          </div>
+                         <div class="col-md-2">
+                            <div class="color-label" style="background: #fcf8e3; height: 40px; border: 1px solid #ccc;"></div>
+                          </div>
+                          <div class="col-md-2">
+                            <h5>DANAS</h5>
+                          </div>
+                        </div>
+                        
+                       
+
 
 
                         <div class="panel-heading">
-                           <h3>Pregled rezervacija za apartman: <?php echo $data['perapartment'][0]->name;?></h3>
+                           <h3>Pregled rezervacija za apartman: <?php echo $data['perapartment'][0]->name;?> </h3>
                         </div>
                         
                         <div class="row">
@@ -117,31 +144,12 @@
         center: 'title' 
        },
       lang: 'hr',
-      defaultDate: '2014-11-12',
+      defaultDate: '2015-01-12',
       editable: false,
-      eventLimit: true, // allow "more" link when too many events
-      events: [ 
-        {
-          title: 'Ime gosta',
-          start: '2014-11-04',
-          end: '2014-11-04'
-        }, 
-        {
-          title: '  Ime gosta',
-          start: '2014-11-09',
-          end: '2014-11-09'
-        }, 
-        {
-          title: 'Ime gosta',
-          start: '2014-11-12',
-          end: '2014-11-15'
-        }, 
-        {
-          title: 'Ime gosta',
-          start: '2014-11-18',
-          end: '2014-11-19'
-        }, 
-      ]
+      eventLimit: true, // allow "more" link when too many events 
+      events: '<?php echo DIR; ?>admin/reservations/feed/<?php echo $data['json_feed'][0]->id_apartment;?>'
+ 
+
     });
     
   });

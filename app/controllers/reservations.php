@@ -12,9 +12,9 @@ class Reservations extends Controller {
 		$this->_guests = $this->loadModel('guests_model');
 		$this->_apartments = $this->loadModel('apartments_model');
 
-		if(Session::get('loggin') == false){
+		  if(Session::get('loggin') == false){
 			url::redirect('admin/login');
-		}
+		} 
 	}
 
 	public function reservations() {
@@ -168,6 +168,8 @@ class Reservations extends Controller {
 
 		$data['title'] = 'Rezervacije po apartmanu'; 
 		$data['perapartment'] = $this->_reservations->get_perapartment($id_apartment); 
+		$data['json_feed'] = $this->_reservations->get_json_per_apartment($id_apartment);
+
 
 		$this->view->rendertemplate('header',$data);
 		$this->view->render('admin/reservations/apartment',$data,$error);
@@ -175,6 +177,14 @@ class Reservations extends Controller {
 
 	}
 
+	public function feedPerApartment ($id_apartment) {
+		$data['json_feed'] = $this->_reservations->get_json_per_apartment($id_apartment);
+
+		$this->view->render('admin/reservations/feed',$data);
+ 
+	}
+
+ 
 	public function delete($reservation_id) {
 		$this->_reservations->delete($reservation_id);
 		Url::redirect('admin/reservations');

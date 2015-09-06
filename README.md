@@ -5,3 +5,4 @@ Sustav je osmišljen da jednako radi na različitim uređajima - nije važno že
 
 Sustav je napravljen sa namjerom da bude jednostavan, brz i siguran. Vrijeme učenja je kratko i sve mogućnosti sustava možete brzo savladati. Za sve upite, podrška je stalno dostupna.
 
+http://bookingapp.net/

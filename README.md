@@ -1,5 +1,4 @@
-# booking_app
-booking_app
+# Booking app
 "Booking app" je proizvod koji na jednom mjestu okuplja sve što vam treba za upravljanje rezervacijama.
 
 Sustav je osmišljen da jednako radi na različitim uređajima - nije važno želite li ga koristiti na vašem osobnom računalu, tabletu ili mobitelu, sve funkcionalnosti će vam stalno biti dostupne.

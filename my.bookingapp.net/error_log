@@ -1,0 +1,42 @@
+[31-Dec-2014 13:28:42 Europe/London] PHP Fatal error:  Class 'apartments' not found in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 85
+[01-Jan-2015 12:30:52 Europe/London] PHP Fatal error:  Class 'reservations' not found in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 85
+[01-Jan-2015 13:13:44 Europe/London] PHP Fatal error:  Class 'reservations' not found in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 85
+[01-Jan-2015 20:57:10 Europe/London] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php on line 13
+[02-Jan-2015 16:13:41 Europe/London] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/reservations.php on line 52
+[02-Jan-2015 16:21:29 Europe/London] PHP Fatal error:  Call to a member function get_reservations() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/admin.php on line 17
+[02-Jan-2015 16:22:58 Europe/London] PHP Fatal error:  Call to a member function get_reservations() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/admin.php on line 17
+[02-Jan-2015 16:34:18 Europe/London] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/pcracuna/public_html/otok-cres.com/app/views/admin/admin.php on line 95
+[02-Jan-2015 18:45:58 Europe/London] PHP Fatal error:  Call to undefined method Reservations::perApartment() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 127
+[02-Jan-2015 18:53:17 Europe/London] PHP Fatal error:  Call to undefined method Reservations::perApartment() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 127
+[02-Jan-2015 18:54:10 Europe/London] PHP Fatal error:  Call to a member function get_perApartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 18:54:42 Europe/London] PHP Fatal error:  Call to a member function get_perApartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 18:55:11 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 18:56:13 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 18:57:18 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 19:01:50 Europe/London] PHP Parse error:  syntax error, unexpected T_STRING in /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php on line 22
+[02-Jan-2015 19:08:06 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 19:08:19 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 19:10:56 Europe/London] PHP Fatal error:  Call to a member function get_perapartment() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php on line 152
+[02-Jan-2015 21:23:02 Europe/London] PHP Fatal error:  Cannot redeclare Reservations_Model::get_diff_apartments() in /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php on line 28
+[02-Jan-2015 21:31:30 Europe/London] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/reservations.php on line 30
+[06-Jan-2015 14:56:36 Europe/London] PHP Fatal error:  Class 'adminaaaaaaa' not found in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 85
+[06-Jan-2015 21:23:59 Europe/London] PHP Fatal error:  Cannot use [] for reading in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 92
+[06-Jan-2015 21:24:12 Europe/London] PHP Fatal error:  Cannot use [] for reading in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 92
+[06-Jan-2015 21:34:37 Europe/London] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 91
+[06-Jan-2015 21:35:49 Europe/London] PHP Fatal error:  Can't use function return value in write context in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 91
+[06-Jan-2015 21:42:54 Europe/London] PHP Fatal error:  Cannot use [] for reading in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 91
+[12-Jan-2015 22:21:01 Europe/London] PHP Parse error:  syntax error, unexpected $end in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/apartment.php on line 168
+[12-Jan-2015 22:21:24 Europe/London] PHP Parse error:  syntax error, unexpected $end in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/apartment.php on line 148
+[12-Jan-2015 22:22:19 Europe/London] PHP Parse error:  syntax error, unexpected $end in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/apartment.php on line 145
+[12-Jan-2015 22:22:29 Europe/London] PHP Parse error:  syntax error, unexpected $end in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/apartment.php on line 144
+[12-Jan-2015 23:39:24 Europe/London] PHP Parse error:  syntax error, unexpected T_ECHO in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/apartment.php on line 123
+[14-Jan-2015 18:43:43 Europe/London] PHP Fatal error:  Call to a member function modify() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/feed.php on line 16
+[14-Jan-2015 18:44:43 Europe/London] PHP Fatal error:  Call to a member function modify() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/feed.php on line 16
+[14-Jan-2015 18:45:14 Europe/London] PHP Fatal error:  Call to a member function modify() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/feed.php on line 16
+[14-Jan-2015 18:46:54 Europe/London] PHP Fatal error:  Call to a member function modify() on a non-object in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/feed.php on line 16
+[19-Jan-2015 20:53:44 Europe/London] PHP Fatal error:  Class 'users' not found in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 85
+[19-Jan-2015 20:55:50 Europe/London] PHP Fatal error:  Call to undefined method Users::users() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 88
+[19-Jan-2015 20:55:58 Europe/London] PHP Fatal error:  Call to undefined method Users::users() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 88
+[19-Jan-2015 20:57:26 Europe/London] PHP Fatal error:  Call to undefined method Users::users() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 88
+[19-Jan-2015 20:59:18 Europe/London] PHP Fatal error:  Call to undefined method Users::users() in /home/pcracuna/public_html/otok-cres.com/app/core/router.php on line 88
+[19-Jan-2015 22:42:34 Europe/London] PHP Parse error:  syntax error, unexpected '=' in /home/pcracuna/public_html/otok-cres.com/app/controllers/users.php on line 63

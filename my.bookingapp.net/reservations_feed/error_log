@@ -1,0 +1,7 @@
+[12-Jan-2015 22:10:33 Europe/Berlin] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 37
+[12-Jan-2015 22:15:22 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 40
+[12-Jan-2015 22:25:06 Europe/Berlin] PHP Warning:  include(DIRapp/core/config.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 7
+[12-Jan-2015 22:25:06 Europe/Berlin] PHP Warning:  include(DIRapp/core/config.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 7
+[12-Jan-2015 22:25:06 Europe/Berlin] PHP Warning:  include(): Failed opening 'DIRapp/core/config.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 7
+[12-Jan-2015 22:36:28 Europe/Berlin] PHP Warning:  fclose(): supplied resource is not a valid stream resource in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 33
+[12-Jan-2015 22:41:25 Europe/Berlin] PHP Fatal error:  Call to a member function query() on a non-object in /home/pcracuna/public_html/otok-cres.com/reservations_feed/feed.php on line 32

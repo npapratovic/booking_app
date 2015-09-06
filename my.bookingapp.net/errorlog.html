@@ -1,0 +1,1131 @@
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 14, 2015 9:46AM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pcracuna_otok-cres`.`app_apartments`, CONSTRAINT `app_apartments_ibfk_1` FOREIGN KEY (`tip_smjestaja`) REFERENCES `app_accomodationtype` (`accomodationtype_id`))</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 78</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(78): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(100): Database->update('app_apartments', Array, Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(278): Apartments_Model->update(Array, Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Apartments->edit('69')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(88): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 14, 2015 9:42AM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pcracuna_otok-cres`.`app_apartments`, CONSTRAINT `app_apartments_ibfk_1` FOREIGN KEY (`tip_smjestaja`) REFERENCES `app_accomodationtype` (`accomodationtype_id`))</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 78</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(78): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(100): Database->update('app_apartments', Array, Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(278): Apartments_Model->update(Array, Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Apartments->edit('69')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(88): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 09, 2015 23:31PM</p>
+
+         <p><strong>Message:</strong> Address in mailbox given [nikola.papratovic@gmail.com, nikola.papratovic@hotmail.com] does not comply with RFC 2822, 3.6.2.</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php</p>
+
+         <p><strong>Line:</strong> 308</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(238): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('nikola.papratov...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(96): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(60): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleHeaderFactory.php(60): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleHeaderSet.php(75): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', Array)
+#5 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleMessage.php(306): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', Array)
+#6 /home/pcracuna/public_html/otok-cres.com/app/helpers/mailer.php(24): Swift_Mime_SimpleMessage->setTo('nikola.papratov...')
+#7 /home/pcracuna/public_html/otok-cres.com/app/controllers/register.php(218): Mailer::sendmail('nikola.papratov...', 'info@otok-cres....', 'SUBVENCIJE - re...', 'Hvala na regist...')
+#8 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Register->subvencije()
+#9 /home/pcracuna/public_html/otok-cres.com/index.php(88): Router::dispatch()
+#10 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 09, 2015 23:28PM</p>
+
+         <p><strong>Message:</strong> Address in mailbox given [nikola.papratovic@gmail.com;nikola.papratovic@hotmail.com] does not comply with RFC 2822, 3.6.2.</p>
+
+         <p><strong>Code:</strong> 0</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php</p>
+
+         <p><strong>Line:</strong> 308</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(238): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('nikola.papratov...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(96): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/Headers/MailboxHeader.php(60): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleHeaderFactory.php(60): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleHeaderSet.php(75): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', Array)
+#5 /home/pcracuna/public_html/otok-cres.com/app/helpers/swiftmailer/classes/Swift/Mime/SimpleMessage.php(306): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', Array)
+#6 /home/pcracuna/public_html/otok-cres.com/app/helpers/mailer.php(24): Swift_Mime_SimpleMessage->setTo('nikola.papratov...')
+#7 /home/pcracuna/public_html/otok-cres.com/app/controllers/register.php(218): Mailer::sendmail('nikola.papratov...', 'info@otok-cres....', 'SUBVENCIJE - re...', 'Hvala na regist...')
+#8 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Register->subvencije()
+#9 /home/pcracuna/public_html/otok-cres.com/index.php(88): Router::dispatch()
+#10 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 04, 2015 2:03AM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pcracuna_otok-cres`.`app_apartments`, CONSTRAINT `app_apartments_ibfk_1` FOREIGN KEY (`tip_smjestaja`) REFERENCES `app_accomodationtype` (`accomodationtype_id`))</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 78</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(78): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(100): Database->update('app_apartments', Array, Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(266): Apartments_Model->update(Array, Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Apartments->edit('85')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jun 04, 2015 2:03AM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`pcracuna_otok-cres`.`app_apartments`, CONSTRAINT `app_apartments_ibfk_1` FOREIGN KEY (`tip_smjestaja`) REFERENCES `app_accomodationtype` (`accomodationtype_id`))</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 78</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(78): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(100): Database->update('app_apartments', Array, Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(266): Apartments_Model->update(Array, Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Apartments->edit('85')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jun 02, 2015 23:42PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/otok-cres.com/app/views/register/register.php on line 44</p><p>Error on Jun 02, 2015 23:42PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/otok-cres.com/app/views/register/register.php on line 44</p><p>Error on Jun 02, 2015 23:42PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/otok-cres.com/app/views/register/register.php on line 47</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:13PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:13PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:11PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:11PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> May 31, 2015 17:11PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY000] [1045] Access denied for user 'minixpro_proddrv'@'localhost' (using password: YES)</p>
+
+         <p><strong>Code:</strong> 1045</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 8</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(8): PDO->__construct('mysql:host=loca...', 'minixpro_proddr...', 'QxFgHWBgwWKrQmd...')
+#1 /home/pcracuna/public_html/otok-cres.com/app/core/model.php(9): Database->__construct()
+#2 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(6): Model->__construct()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/controller.php(37): Apartments_Model->__construct()
+#4 /home/pcracuna/public_html/otok-cres.com/app/controllers/portal.php(15): Controller->loadModel('apartments_mode...')
+#5 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(85): Portal->__construct()
+#6 /home/pcracuna/public_html/otok-cres.com/index.php(86): Router::dispatch()
+#7 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Mar 15, 2015 20:25PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php(14): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/portal.php(44): Apartments_Model->get_latest_apartments(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Portal->view('68')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(81): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Mar 15, 2015 20:24PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php(14): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/portal.php(44): Apartments_Model->get_latest_apartments(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Portal->view('68')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(81): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Mar 15, 2015 20:24PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php(14): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/portal.php(44): Apartments_Model->get_latest_apartments(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Portal->view('68')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(81): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Mar 15, 2015 16:07PM - Missing argument 1 for Portal::single(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/portal/portal.php on line 18</p><p>Error on Mar 15, 2015 16:07PM - Missing argument 1 for Portal::single(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/portal/portal.php on line 18</p><p>Error on Mar 15, 2015 15:10PM - Missing argument 1 for Apartments_Model::count_apartments(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 31 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php on line 12</p><p>Error on Mar 15, 2015 15:10PM - Missing argument 1 for Apartments_Model::count_apartments(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 31 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php on line 12</p><p>Error on Mar 15, 2015 15:10PM - Missing argument 1 for Reservations_Model::count_reservations(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 29 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/reservations_model.php on line 13</p><p>Error on Mar 15, 2015 15:05PM - Missing argument 1 for Guests_Model::count_guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 30 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/guests_model.php on line 12</p><p>Error on Mar 14, 2015 17:39PM - Missing argument 1 for Apartments_Model::get_apartments(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/reservations.php on line 95 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/apartments_model.php on line 9</p><p>Error on Mar 14, 2015 17:38PM - Missing argument 1 for Guests_Model::get_guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/reservations.php on line 94 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/guests_model.php on line 9</p><p>Error on Mar 14, 2015 16:49PM - Missing argument 1 for Guests_Model::get_guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/reservations.php on line 94 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/guests_model.php on line 9</p><p>Error on Mar 14, 2015 14:45PM - Missing argument 1 for Guests_Model::get_guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/reservations.php on line 94 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/guests_model.php on line 9</p><p>Error on Mar 14, 2015 14:34PM - Missing argument 1 for Guests_Model::get_guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/reservations.php on line 94 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/guests_model.php on line 9</p><p>Error on Mar 14, 2015 14:28PM - Missing argument 1 for Reservations_Model::get_reservations(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 26 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/reservations_model.php on line 9</p><p>Error on Mar 14, 2015 14:28PM - Missing argument 1 for Reservations_Model::get_reservations(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 26 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/reservations_model.php on line 9</p><p>Error on Mar 14, 2015 14:26PM - Missing argument 1 for Reservations_Model::get_reservations(), called in /home/pcracuna/public_html/tourist-agent.com/app/controllers/admin.php on line 26 and defined in /home/pcracuna/public_html/tourist-agent.com/app/models/reservations_model.php on line 9</p><p>Error on Mar 14, 2015 14:13PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:13PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:13PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:12PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:10PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:10PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 18</p><p>Error on Mar 14, 2015 14:09PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 19</p><p>Error on Mar 14, 2015 14:09PM - Missing argument 1 for Guests::guests(), called in /home/pcracuna/public_html/tourist-agent.com/app/core/router.php on line 88 and defined in /home/pcracuna/public_html/tourist-agent.com/app/controllers/guests.php on line 19</p><p>Error on Mar 05, 2015 20:47PM - require(app/views/portal/portal.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Mar 05, 2015 20:46PM - require(app/views/portal/portal.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Mar 05, 2015 20:46PM - require(app/views/portal/portal.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Mar 05, 2015 20:46PM - require(app/views/portal/portal.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Mar 05, 2015 20:46PM - require(app/views/portal/portal.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Feb 09, 2015 22:12PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/tourist-agent.com/app/views/register/register.php on line 44</p><p>Error on Feb 09, 2015 22:12PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/tourist-agent.com/app/views/register/register.php on line 44</p><p>Error on Feb 08, 2015 18:47PM - require(app/views/admin/users/view-user-group.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Feb 08, 2015 18:46PM - require(app/views/admin/users/view-user-group.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 18:24PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_user_group' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/groups_model.php(11): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(32): Groups_Model->get_user_groups()
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->user_groups()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 18:23PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_user_group' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/groups_model.php(11): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(32): Groups_Model->get_user_groups()
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->user_groups()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 18:22PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/groups_model.php(23): Database->select('SELECT * FROM a...', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(121): Groups_Model->get_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('15')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 18:15PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound</p>
+
+         <p><strong>Code:</strong> HY093</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/groups_model.php(23): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(121): Groups_Model->get_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('15')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 18:08PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound</p>
+
+         <p><strong>Code:</strong> HY093</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/groups_model.php(23): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(121): Groups_Model->get_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('15')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 17:52PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_user' in 'where clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(45): Database->select('SELECT * FROM a...', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(119): Users_Model->get_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('1')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 17:26PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound</p>
+
+         <p><strong>Code:</strong> HY093</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(44): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(119): Users_Model->get_user_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('1')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 17:24PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pcracuna_booking_app.app_user_ffffffff' doesn't exist</p>
+
+         <p><strong>Code:</strong> 42S02</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(44): Database->select('SELECT * FROM a...', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(119): Users_Model->get_user_group(NULL)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(127): Users->edit_user_group('1')
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(68): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Feb 08, 2015 16:50PM - require(app/views/admin/users/user-groups/edit-user-group.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Feb 08, 2015 16:39PM - Creating default object from empty value in /home/pcracuna/public_html/tourist-agent.com/app/views/admin/users/edit-user-group.php on line 43</p><p>Error on Feb 08, 2015 16:39PM - Creating default object from empty value in /home/pcracuna/public_html/tourist-agent.com/app/views/admin/users/edit-user-group.php on line 43</p><p>Error on Feb 08, 2015 16:35PM - require(app/views/admin/users/edit-user-group.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Feb 08, 2015 16:34PM - require(app/views/admin/users/edit-user-group.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 16:25PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pregled_rezervacija' cannot be null</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(39): Database->insert('app_user_groups', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(72): Users_Model->insert_user_group(Array)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->add_user_group()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(66): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 16:17PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'unos_apartmana' cannot be null</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(39): Database->insert('app_user_groups', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(72): Users_Model->insert_user_group(Array)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->add_user_group()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(66): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 16:14PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(20): Database->insert('app_users', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(72): Users_Model->insert(Array)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->add_user_group()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(66): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Feb 08, 2015 16:12PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/tourist-agent.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/tourist-agent.com/app/models/users_model.php(20): Database->insert('app_users', Array)
+#2 /home/pcracuna/public_html/tourist-agent.com/app/controllers/users.php(72): Users_Model->insert(Array)
+#3 /home/pcracuna/public_html/tourist-agent.com/app/core/router.php(88): Users->add_user_group()
+#4 /home/pcracuna/public_html/tourist-agent.com/index.php(66): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Feb 08, 2015 15:03PM - require(app/views/admin/users/user-groups.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/tourist-agent.com/app/core/view.php on line 6</p><p>Error on Jan 25, 2015 20:38PM - include(includes/top-sidebar-nav.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/views/admin/users/users.php on line 7</p><p>Error on Jan 25, 2015 20:38PM - include(includes/top-sidebar-nav.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/views/admin/users/users.php on line 7</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 19, 2015 22:53PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'grupa_korisnika' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/users_model.php(20): Database->insert('app_users', Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/users.php(83): Users_Model->insert(Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Users->add()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(61): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 19, 2015 22:13PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/users_model.php(10): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/users.php(20): Users_Model->get_users()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Users->users()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(61): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 19, 2015 21:05PM - require(app/views/admin/users/users.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Jan 19, 2015 21:04PM - require(app/views/admin/users/users.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 19, 2015 21:03PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'apartment_id' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/users_model.php(10): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/users.php(20): Users_Model->get_users()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Users->users()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(61): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 14, 2015 19:14PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'app_reservations.id_guest =  WHERE id_apartment ='9'' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(26): Database->select('SELECT id_apart...', Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(181): Reservations_Model->get_json_per_apartment('9')
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Reservations->feedPerApartment('9')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(52): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 07, 2015 19:27PM - move_uploaded_file(../uploads/10268659_10202723322897061_3407867225060143525_n.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 188</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 06, 2015 22:06PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'imgaa' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(19): Database->insert('app_apartments', Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(96): Apartments_Model->insert(Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Apartments->add()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(51): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 06, 2015 21:09PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'img' cannot be null</p>
+
+         <p><strong>Code:</strong> 23000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 42</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(42): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/apartments_model.php(19): Database->insert('app_apartments', Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php(98): Apartments_Model->insert(Array)
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Apartments->add()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(51): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 06, 2015 21:07PM - Invalid argument supplied for foreach() in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 88</p><p>Error on Jan 06, 2015 21:02PM - move_uploaded_file(images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 92</p><p>Error on Jan 06, 2015 16:03PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 16:02PM - move_uploaded_file(images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 16:00PM - move_uploaded_file(images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:59PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:58PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:57PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:57PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:56PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:56PM - move_uploaded_file(http://otok-cres.com/images/IMAGE0004.jpg): failed to open stream: HTTP wrapper does not support writeable connections in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:55PM - move_uploaded_file(.DIR.images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:54PM - move_uploaded_file(images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><p>Error on Jan 06, 2015 15:53PM - move_uploaded_file(images/IMAGE0004.jpg): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/controllers/apartments.php on line 89</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 02, 2015 20:53PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN app_apartments ON app_apartments.apartment_id = app_reservations.id_a' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(22): Database->select('SELECT reservat...', Array)
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(152): Reservations_Model->get_perapartment('9')
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Reservations->perApartment('9')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(51): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 02, 2015 20:51PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound</p>
+
+         <p><strong>Code:</strong> HY093</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(22): Database->select('SELECT reservat...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(152): Reservations_Model->get_perapartment('9')
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(127): Reservations->perApartment('9')
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(51): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 02, 2015 19:05PM - require(app/views/admin/reservations/apartment.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Jan 02, 2015 19:05PM - require(app/views/admin/reservations/apartment.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Jan 02, 2015 19:04PM - require(app/views/admin/reservations/apartment.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 02, 2015 16:47PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN app_apartments ON app_apartments.apartment_id = app_reservations.id_a' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT reservat...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/admin.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Admin->admin()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 02, 2015 16:46PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDERBY reservation_id DESC' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT reservat...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/admin.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Admin->admin()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 02, 2015 16:46PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY reservation_id DESC' at line 1</p>
+
+         <p><strong>Code:</strong> 42000</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT reservat...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/admin.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Admin->admin()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 22:08PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 21:56PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/guests_model.php(10): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/guests.php(20): Guests_Model->get_guests()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Guests->guests()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 21:54PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/guests_model.php(10): Database->select('SELECT * FROM a...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/guests.php(20): Guests_Model->get_guests()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Guests->guests()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 01, 2015 21:45PM - include(includes/sapartment_idebar-nav.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/views/admin/apartments/apartments.php on line 6</p><p>Error on Jan 01, 2015 21:43PM - include(includes/sapartment_idebar-nav.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/views/admin/apartments/apartments.php on line 6</p><h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 20:16PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'app_reservations.id' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT app_rese...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 19:39PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'app_reservations.id' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT app_rese...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 16:05PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'app_reservations.id' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT app_rese...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 16:04PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'app_reservations.id' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT app_rese...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<h3>Exception information:</h3>
+
+         <p><strong>Date:</strong> Jan 01, 2015 15:59PM</p>
+
+         <p><strong>Message:</strong> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'app_reservations.id' in 'field list'</p>
+
+         <p><strong>Code:</strong> 42S22</p>
+
+         <p><strong>File:</strong> /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php</p>
+
+         <p><strong>Line:</strong> 25</p>
+
+         <h3>Stack trace:</h3>
+
+         <pre>#0 /home/pcracuna/public_html/otok-cres.com/app/helpers/database.php(25): PDOStatement->execute()
+#1 /home/pcracuna/public_html/otok-cres.com/app/models/reservations_model.php(10): Database->select('SELECT app_rese...')
+#2 /home/pcracuna/public_html/otok-cres.com/app/controllers/reservations.php(20): Reservations_Model->get_reservations()
+#3 /home/pcracuna/public_html/otok-cres.com/app/core/router.php(88): Reservations->reservations()
+#4 /home/pcracuna/public_html/otok-cres.com/index.php(49): Router::dispatch()
+#5 {main}</pre>
+
+         <hr />
+<p>Error on Jan 01, 2015 15:03PM - require(app/views/admin/reservations/reservations.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Jan 01, 2015 15:02PM - include(includes/topbar-nav.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/views/admin/reservations/add.php on line 2</p><p>Error on Dec 31, 2014 17:02PM - require(app/views/admin/guests/viewguest.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Dec 31, 2014 17:01PM - require(app/views/admin/guests/viewguest.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Dec 31, 2014 17:01PM - require(app/views/admin/guests/viewguest.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Dec 31, 2014 17:00PM - require(app/views/admin/guests/view.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p><p>Error on Dec 31, 2014 17:00PM - require(app/views/admin/guests/view.php): failed to open stream: No such file or directory in /home/pcracuna/public_html/otok-cres.com/app/core/view.php on line 6</p>
